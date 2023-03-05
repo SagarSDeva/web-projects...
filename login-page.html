@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url("pexels-sergey-nikolaev-3146816.jpg");
+background-position: center;
+background-size: cover;
+height: 100vh;
+  }
+  .navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+  }
+
+  .icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+  }
+  .logo{
+    color: rgb(212, 100, 8);
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 0px;
+    padding-top: 10px;
+    float: left;
+  }
+  .menu{
+    float: left;
+    width: 400px;
+    height: 70px;
+  }
+  ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  ul li{
+    list-style: none;
+    margin-left: 62px;margin-top: 27px;
+    font-size: 15px;
+  }
+  ul li a{
+    color: antiquewhite;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+  }
+  ul li a:hover{
+       color:  rgb(212, 100, 8);
+  }
+  .search{
+    width: 350px;
+    float: left;
+    margin-left: 250px;
+  }
+  
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid orange;
+    margin-top: 15px;
+    color: white;
+    border-right: none;
+    font-size: 15px;
+    float: left;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btnn{
+    width: 100px;
+    height: 40px;
+    background: orange;
+    border: 2px solid rgb(136, 89, 2);
+    margin-top: 15px;
+    font-size: 15px;
+    color: white;
+    border-bottom-right-radius: 5px;
+}
+.btnn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: arial;
+    letter-spacing: 1.2px;
+      line-height: 30px;
+}
+
+.content h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 10%;
+    letter-spacing: 2px;
+}
+.content .cn{
+    width:150px;
+    height: 40px;
+    background: orange;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 10px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.cn:hover{
+    background-color: whitesmoke;
+}
+.form{
+    width: 250px;
+    height: 400px;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+padding: 25px;
+border-radius: 15px;    
+}
+.form h2{
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    color: orange;
+    margin: 2px;
+    padding: 10px;
+}
+.form input{
+    width: 235px;
+    margin-left: 2px;
+    height: 40px;
+    background: transparent;
+    border-bottom: 1px solid orange;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: antiquewhite;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 35px;
+    font-family: sans-serif;
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn{
+    width: 230px;
+    height: 35px;
+    background-color: orange;
+    border: none;
+    margin-top: 35px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: aliceblue;
+    transition: 0.5s ease;
+}
+.btn a{
+    text-decoration: none;
+    color: rgb(32, 29, 24);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+.link{
+    margin-top: 10px;
+    text-align: center;
+}
+.sign-up,.sign-up a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(250, 246, 41);
+    margin-bottom: 10px;
+    
+}
+.lo{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sites{
+    padding: 5px;
+    border: 2px solid gold;
+    margin: 20px;
+}
+.sites a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.co{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    column-gap: 30px;
+}
+.vo img{
+    width: 25px;
+    height: 25px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Predox</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Design</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+
+
+
+
+        <div class="search">
+            <input type="search" class="srch" placeholder="Search....">
+            <a href="#"><button class="btnn">Search</button></a>
+        </div>
+        </div>
+
+
+        <div class="content">
+            <h2>Web Design &<span> Development</span> <br> Course</h2>
+            <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Reprehenderit quod non necessitatibus molestiae amet recusandae esse quidem soluta officia nulla. <br></p>
+                
+            <button class="cn"><a href="#">Join Us</a></button>
+
+
+            <div class="form">
+                <h2>Login here</h2>
+                <input type="email" name="email" placeholder="Enter email here" id="">
+                <input type="password" name="password" placeholder="Enter password here" id="">
+                <button class="btn"><a href="#">Login</a></button>
+
+                <p class="link">Don't have an Account</p><br>
+                <p class="sign-up"><a href="#">Sign Up</a></p>
+                <p class="lo" style="text-align: center;">Or Login with</p>
+
+                <div class="co">
+                    <div class="google vo"><a href="https://accounts.google.com"><img src="/google.png" alt=""></a></div>
+                    <div class="facebook vo"><a href="https://m.facebook.com"><img src="/5968764.png" alt=""></a></div>
+                    <div class="instagram vo"><a href="https://secure.instagram.com"><img src="/instagram.png" alt=""></a></div>
+                    <div class="linkedin vo"><a href="https://www.linkedin.com/login"><img src="/linkedin.png" alt=""></a></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
